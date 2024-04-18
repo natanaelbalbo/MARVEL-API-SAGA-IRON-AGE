@@ -1,0 +1,45 @@
+-rota para buscar dados da comics da saga que foi escolhida e salvar no banco de dados:
+ 
+ routes.get('/inserir-comics', comicsController.buscarComics);
+
+
+-rotas Comics Crud:
+ 
+ routes.post('/create-comics', comicsController.create);
+ routes.get('/comics', comicsController.findAll);
+ routes.put('/comics/:id', comicsController.update);
+ routes.delete('/comics/:id', comicsController.delete);
+
+
+-rota para buscar dados dos criadores da saga que foi escolhida e salvar no banco de dados:
+ 
+ routes.get('/inserir-criadores', criadoresController.buscarCriadoresDaMarvel)
+
+-rotas Ciradores Crud:
+ 
+ routes.post('/create-criadores', criadoresController.create);
+ routes.get('/criadores', criadoresController.findAll);
+ routes.put('/criadores/:id', criadoresController.update);
+ routes.delete('/criadores/:id', criadoresController.delete);
+
+
+-rota para buscar dados dos personagens da saga que foi escolhida e salvar no banco de dados:
+ routes.get('/inserir-personagens', personagensController.buscarPersonagens)
+
+-rotas Personagens Crud:
+ routes.post('/create-personagens', personagensController.create);
+ routes.get('/personagens', personagensController.findAll);
+ routes.put('/personagens/:id', personagensController.update);
+ routes.delete('/personagens/:id', personagensController.delete);
+
+
+-Rotas auxiliares: 
+ 
+ routes.get('/criadores-mais-de-20-quadrinhos', criadoresController.findCriadoresComMaisDeVinteQuadrinhos);
+ routes.get('/comics-datas-vendas', comicsController.buscarDataPublicao);
+ routes.get('/buscar-personagem/:nome', personagensController.buscarPersonagemNome);
+ routes.get('/buscar-criador-por-letra/:letra', criadoresController.buscarPorLetra); 
+ routes.get('/buscar-criadores-funcao/:funcao', criadoresController.buscarPorFuncao);
+ routes.get('/buscar-comics-por-letra/:letra', comicsController.buscarComicsPorLetra)
+ routes.get('/buscar-comics-descricao-maior-50', comicsController.buscarPorDescricao)
+ routes.get('/buscar-personagem-imagem', personagensController.retornarCaminhoImagem)

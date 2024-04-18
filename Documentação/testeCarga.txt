@@ -1,0 +1,18 @@
+100 requisições:
+
+results:
+
+console.log
+    Sucesso ao conectar com o banco de dados
+
+      at App.database (src/app.ts:22:21)
+
+ PASS  src/test/carga.test.ts (10.615 s)
+  Testes de carga das rotas da API
+    √ Deve lidar com uma carga de requisições sem problemas (6659 ms)
+
+Test Suites: 1 passed, 1 total                                                                                                                                       
+Tests:       1 passed, 1 total                                                                                                                                       
+Snapshots:   0 total
+Time:        10.729 s
+Ran all test suites matching /src\\test\\carga.test.ts/i.
