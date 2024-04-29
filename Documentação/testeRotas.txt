@@ -1,0 +1,5 @@
+Test Suites: 1 passed, 1 total                                                                                                                      
+Tests:       2 failed, 18 passed, 20 total                                                                                                          
+Snapshots:   0 total
+Time:        9.946 s, estimated 24 s
+Ran all test suites matching /src\\test\\routes.test.ts/i.
