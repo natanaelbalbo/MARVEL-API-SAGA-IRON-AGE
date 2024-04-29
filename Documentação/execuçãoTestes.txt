@@ -1,0 +1,5 @@
+-Comando para rodar todos os testes de uma vez:
+para rodar os testes de forma automaziadas das camadas acima é necessário o comando 'npm test'.
+
+-Comando para rodar testes espcíficos: 
+'jest caminho-do-arquivo', exemplo: 'jest src/test/carga.test.ts'.
